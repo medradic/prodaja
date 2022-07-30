@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Мед Радић</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="refresh" content="0; url='https://sr.m.wikipedia.org/sr-ec/%D0%9C%D0%B5%D0%B4'" /> -->
+  <meta name="Med Radic" content="Radjevski bagremov med">
+  </head>
+  <body>
+<h2>Страница у припреми...</h2>
+<h2><a href="tel:062-887-2109">062-887-2109</a></h2>
+    <style>
+h2,a {
+  color: #FFFF33;
+}
+
+body  {
+  background-image: url("https://i.imgur.com/hHHYpgD.jpeg");
+background-repeat:no-repeat;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:center;
+}
+    
+.logo {
+    text-align: center;
+    /*background-color: white;*/
+    background-image: url('https://raw.githubusercontent.com/medradic/prodaja/main/logo.gif');
+    background-size: contain;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    height: 95vh;
+}
+</style>
+
+<div class="logo"></div>
+
+
+  <script>
+    function sendMessage() {
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discordapp.com/api/webhooks/1003045666580344862/Q3qDy5tiQKd-7t-NGyFh_P2ngBujqGaYhEd_hKffq28pXX1VYtwvmwdLN0R_zE2Yg9BR");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        //username: "My Webhook Name",
+        //avatar_url: "",
+        content: "**Sajt je upravo posetio:** *"+window.navigator.userAgent+"*"
+      }
+
+      request.send(JSON.stringify(params));
+    }
+    sendMessage();
+  </script>
+
+
+
+  </body>
+</html>
