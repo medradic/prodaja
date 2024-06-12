@@ -1,8 +1,10 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
 <style>
+
     #resultCount {
         font-size: 20px; /* Promenite veličinu fonta */
         padding: px; /* Dodajte više prostora oko teksta u polju za unos */
@@ -25,48 +27,48 @@
 <br>
 
 <hr>
-<h1>Tezina [g]</h1>
+<h2>Tezina [g]</h2>
 <iframe width="300" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/widgets/879587"></iframe>
 
 <iframe id="tezina" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/charts/7?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=1440&type=line&update=15"></iframe>
 <img src="hx711.png" height="150">
 
 <hr>
-<h1>Temperatura BMP280 [℃]</h1>
+<h2>Temperatura BMP280 [℃]</h2>
 <iframe width="300" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/widgets/872900"></iframe>
 
 <iframe id="temp1" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=1440&type=line&update=15"></iframe>
 <img src="bmp280.png" height="150">
 <hr>
-<h1>Temperatura DHT22 [℃]</h1>
+<h2>Temperatura DHT22 [℃]</h2>
 <iframe width="300" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/widgets/872904"></iframe>
 
 <iframe id="temp2" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=1440&type=line&update=15"></iframe>
 <img src="dht22.png" height="150">
 
 <hr>
-<h1>Vlaznost vazduha DHT22 [%]</h1>
+<h2>Vlaznost vazduha DHT22 [%]</h2>
 <iframe width="300" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/widgets/872905"></iframe>
 
 <iframe id="vlaznost" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=1440&type=line&update=15"></iframe>
 <img src="dht22.png" height="150">
 
 <hr>
-<h1>Pritisak vazduha BMP280 [hPa]</h1>
+<h2>Pritisak vazduha BMP280 [hPa]</h2>
 <iframe width="300" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/widgets/872901"></iframe>
 
 <iframe id="pritisak" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=1440&type=line&update=15"></iframe>
 <img src="bmp280.png" height="150">
 
 <hr>
-<h1>Napon baterije [V]</h1>
+<h2>Napon baterije [V]</h2>
 <iframe width="300" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/widgets/872902"></iframe>
 
 <iframe id="napon" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=1440&type=line&update=15"></iframe>
 <img src="18650.png" height="150">
 
 <hr>
-<h1>Slobodna memorija [%]</h1>
+<h2>Slobodna memorija [%]</h2>
 <iframe width="300" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/widgets/880301"></iframe>
 
 
@@ -91,7 +93,7 @@
 
 
         function sve() {
-            document.getElementById("tezina").src = "https://thingspeak.com/channels/2483721/charts/7?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15&results=" + resultCount;
+            document.getElementById("tezina").src = "https://thingspeak.com/channels/2483721/charts/7?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15";
             document.getElementById("temp1").src = "https://thingspeak.com/channels/2483721/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15";
             document.getElementById("temp2").src = "https://thingspeak.com/channels/2483721/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15";
             document.getElementById("vlaznost").src = "https://thingspeak.com/channels/2483721/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15";
