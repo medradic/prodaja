@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #resultCount {
+        font-size: 20px; /* Promenite veličinu fonta */
+        padding: px; /* Dodajte više prostora oko teksta u polju za unos */
+        width: 100px; /* Promenite širinu polja za unos */
+    }
+    
+    button {
+        font-size: 20px; /* Promenite veličinu fonta */
+        padding: 15px 20px; /* Dodajte više prostora oko teksta u dugmetu */
+    }
+</style>
+<title>Mini meteo stanica</title>
+</head>
+<body>
+<label for="resultCount"><B>BROJ REZULTATA:&nbsp</B></label>
+<input type="number" id="resultCount" name="resultCount" min="1" max="100000" value="1440" onblur="updateIframe()">
+&nbsp&nbsp&nbsp&nbsp&nbspili&nbsp&nbsp&nbsp&nbsp&nbsp
+<button onclick="sve()">24H</button>
+
+<br>
+
+<hr>
+<h1>Tezina [g]</h1>
+<iframe width="300" height="260" style="border: 0px solid #cccccc;" src="https://thingspeak.com/channels/2483721/widgets/879587"></iframe>
+
+<iframe id="tezina" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/charts/7?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=1440&type=line&update=15"></iframe>
+<img src="hx711.png" height="150">
+
+<hr>
+<h1>Temperatura BMP280 [℃]</h1>
+<iframe width="300" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/widgets/872900"></iframe>
+
+<iframe id="temp1" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=1440&type=line&update=15"></iframe>
+<img src="bmp280.png" height="150">
+<hr>
+<h1>Temperatura DHT22 [℃]</h1>
+<iframe width="300" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/widgets/872904"></iframe>
+
+<iframe id="temp2" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=1440&type=line&update=15"></iframe>
+<img src="dht22.png" height="150">
+
+<hr>
+<h1>Vlaznost vazduha DHT22 [%]</h1>
+<iframe width="300" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/widgets/872905"></iframe>
+
+<iframe id="vlaznost" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=1440&type=line&update=15"></iframe>
+<img src="dht22.png" height="150">
+
+<hr>
+<h1>Pritisak vazduha BMP280 [hPa]</h1>
+<iframe width="300" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/widgets/872901"></iframe>
+
+<iframe id="pritisak" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=1440&type=line&update=15"></iframe>
+<img src="bmp280.png" height="150">
+
+<hr>
+<h1>Napon baterije [V]</h1>
+<iframe width="300" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/widgets/872902"></iframe>
+
+<iframe id="napon" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=1440&type=line&update=15"></iframe>
+
+
+<hr>
+<h1>Slobodna memorija [%]</h1>
+<iframe width="300" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/widgets/872903"></iframe>
+
+
+<iframe id="memo" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2483721/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=1440&type=line&update=15"></iframe>
+<hr>
+
+    <script>
+        function updateIframe() {
+		var resultCount = document.getElementById("resultCount").value;           
+            document.getElementById("tezina").src = "https://thingspeak.com/channels/2483721/charts/7?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15&results=" + resultCount;
+            document.getElementById("temp1").src = "https://thingspeak.com/channels/2483721/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15&results=" + resultCount;
+            document.getElementById("temp2").src = "https://thingspeak.com/channels/2483721/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15&results=" + resultCount;
+            document.getElementById("vlaznost").src = "https://thingspeak.com/channels/2483721/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15&results=" + resultCount;
+            document.getElementById("pritisak").src = "https://thingspeak.com/channels/2483721/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15&results=" + resultCount;
+            document.getElementById("napon").src = "https://thingspeak.com/channels/2483721/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15&results=" + resultCount;
+            document.getElementById("memo").src = "https://thingspeak.com/channels/2483721/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15&results=" + resultCount;
+			
+
+        }
+
+
+
+        function sve() {
+            document.getElementById("tezina").src = "https://thingspeak.com/channels/2483721/charts/7?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15&results=" + resultCount;
+            document.getElementById("temp1").src = "https://thingspeak.com/channels/2483721/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15";
+            document.getElementById("temp2").src = "https://thingspeak.com/channels/2483721/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15";
+            document.getElementById("vlaznost").src = "https://thingspeak.com/channels/2483721/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15";
+            document.getElementById("pritisak").src = "https://thingspeak.com/channels/2483721/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15";
+            document.getElementById("napon").src = "https://thingspeak.com/channels/2483721/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15";
+            document.getElementById("memo").src = "https://thingspeak.com/channels/2483721/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&update=15";
+        }
+    </script>
+</body>
+</html>
+
+
