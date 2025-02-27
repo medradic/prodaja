@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #d4a017;
+    --secondary-color: #2f4f4f;
+    --light-color: #fff8e1;
+}
+
+body {
+    background-color: var(--light-color);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Ostali CSS stilovi iz prethodnog odgovora... */
+/* Kopiraj ceo CSS deo iz prethodnog odgovora ovde */
