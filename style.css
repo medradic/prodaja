@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #d4a017;
+    --secondary-color: #2f4f4f;
+    --light-color: #fff8e1;
+}
+
+body {
+    background-color: var(--light-color);
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://placehold.co/1920x1080/2F4F4F/FFF?text=Pčelinjak+Radic');
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.about, .products, .contact {
+    padding: 5rem 5%;
+    background: white;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
