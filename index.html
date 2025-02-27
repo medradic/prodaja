@@ -3,15 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Porodični pčelinjak Radić - Proizvodnja prirodnog meda i pčelinjih proizvoda. Tradicija od 1990. godine sa ljubavlju prema pčelama.">
-    <meta name="keywords" content="med, pčelinjak, prirodni med, livadski med, matična mliječ, pčelinji vosak, Radić">
-    <meta name="author" content="Pčelinjak Radić">
-    <meta property="og:title" content="Pčelinjak Radić - Domaći Med iz Srbije">
-    <meta property="og:type" content="website">
-    <link rel="canonical" href="https://www.pcelinjak-racic.rs">
-    <title>Pčelinjak Radić - Proizvodnja Prirodnog Meda</title>
+    <meta name="description" content="Porodični pčelinjak Radić - Proizvodnja prirodnog meda i pčelinjih proizvoda">
+    <title>Pčelinjak Radić - Domaći Med</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary-color: #d4a017;
+            --secondary-color: #2f4f4f;
+            --light-color: #fff8e1;
+        }
+
+        body {
+            background-color: var(--light-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://placehold.co/1920x1080/2F4F4F/FFF?text=Pčelinjak+Radic');
+            background-size: cover;
+            height: 100vh;
+            color: white;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 5%;
+            position: fixed;
+            width: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 2rem;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            animation: slideDown 1s ease;
+        }
+
+        .about {
+            padding: 5rem 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            background: white;
+        }
+
+        .products {
+            padding: 5rem 5%;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact {
+            padding: 5rem 5%;
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: rgba(0,0,0,0.9);
+                flex-direction: column;
+                padding: 2rem;
+                text-align: center;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
 </head>
 <body>
     <header id="home">
@@ -27,40 +171,57 @@
         </nav>
 
         <div class="hero">
-            <div class="hero-content">
-                <h1>Domaći Med iz Srbije</h1>
-                <p>Porodična tradicija od 1990. godine</p>
-            </div>
+            <h1>Domaći Med iz Srbije</h1>
+            <p>Porodična tradicija od 1990. godine</p>
         </div>
     </header>
 
     <section id="about" class="about">
-        <div class="about-img">
-            <img src="images/pcelinjak.jpg" alt="Naš pčelinjak">
-        </div>
-        <div class="about-content">
-            <h2>O porodičnoj tradiciji</h2>
-            <p>Naš pčelinjak sa ponosom nastavlja porodičnu tradiciju koja se prenosi kroz tri generacije. Specijalizovani smo za proizvodnju prirodnog livadskog meda i pčelinjih proizvoda najvišeg kvaliteta.</p>
-            <p>Koristimo isključivo prirodne metode uzgoja i vađenja meda, čime čuvamo autentičan okus i ljekovita svojstva naših proizvoda. Naši pčelinjaci su smješteni u netaknutoj prirodi planinskog područja Srbije.</p>
-        </div>
+        <!-- O nama sadržaj -->
     </section>
 
     <section id="products" class="products">
-        <h2>Naši Proizvodi</h2>
-        <div class="product-grid">
-            <!-- Product cards here -->
-        </div>
+        <!-- Proizvodi sadržaj -->
     </section>
 
     <section id="contact" class="contact">
-        <!-- Contact section content -->
+        <!-- Kontakt sadržaj -->
     </section>
 
     <footer>
-        <!-- Footer content -->
+        <!-- Footer sadržaj -->
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Mobile menu toggle
+            $('.mobile-menu-btn').click(function() {
+                $('.nav-links').toggleClass('active');
+            });
+
+            // Smooth scroll i zatvaranje menija
+            $('.nav-links a').click(function(e) {
+                e.preventDefault();
+                const target = $(this).attr('href');
+                
+                $('.nav-links').removeClass('active');
+                
+                if(target === '#home') {
+                    $('html, body').animate({ scrollTop: 0 }, 500);
+                } else {
+                    const offset = $(target).offset().top - 70;
+                    $('html, body').animate({ scrollTop: offset }, 500);
+                }
+            });
+
+            // Zatvaranje menija klikom van njega
+            $(document).click(function(e) {
+                if(!$(e.target).closest('.nav-links, .mobile-menu-btn').length) {
+                    $('.nav-links').removeClass('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
