@@ -1,0 +1,16 @@
+# Generisani paketi i lokalne kopije
+/dist/
+/prodaja-final/
+*.zip
+
+# Keševi i lokalna konfiguracija
+__pycache__/
+*.py[cod]
+node_modules/
+.env
+.env.*
+.aws/
+.codex/
+.agents/
+.DS_Store
+Thumbs.db
