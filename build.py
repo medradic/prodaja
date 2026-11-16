@@ -10,9 +10,12 @@ ARCHIVE = ROOT / "prodaja-final.zip"
 WEB_FILES = ["index.html", "style.css", "script.js", ".nojekyll"]
 ASSETS = [
     "assets/favicon.svg",
-    "assets/fonts/yrsa-regular.woff2",
-    "assets/fonts/yrsa-italic.woff2",
-    "assets/fonts/OFL.txt",
+    "assets/fonts/noto-serif.woff2",
+    "assets/fonts/noto-serif-italic.woff2",
+    "assets/fonts/lato-regular.woff2",
+    "assets/fonts/lato-bold.woff2",
+    "assets/fonts/Noto-OFL.txt",
+    "assets/fonts/Lato-OFL.txt",
     *[f"assets/{name}.{ext}" for name in
       ("bagrem", "livada", "propolis", "teglice", "poklopcici")
       for ext in ("png", "webp")],
