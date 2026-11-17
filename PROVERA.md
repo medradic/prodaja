@@ -8,6 +8,16 @@ Novi vizuelni identitet: svetla topla podloga (#f6f4ee), tamno mastilo, jedan me
 - Kontakt: tabela Telefon / Email / Lokacija sa linkom ka mapi.
 - Provereno u Chrome-u na 1440 i 390 px: nema horizontalnog skrola ni JavaScript grešaka, mobilni meni radi; `node --check script.js` prolazi.
 
+### Finalna tura
+
+- Uvod: veliki naslov sa medenim kurzivom, dugmad Proizvodi / Kontakt, tri složene fotografije koje se razmaknu na hover i diskretan šestougaoni motiv u pozadini.
+- Tamna tema: automatski prati sistem, a dugme u zaglavlju je ručno menja i pamti (`localStorage`, uz `try/catch`). Tema se postavlja pre crtanja, bez treperenja.
+- Navigacija označava sekciju koja je trenutno na ekranu (`aria-current`).
+- Kontakt: dugmad „Kopiraj" za telefon i mejl, vidljiva samo kada browser podržava kopiranje; status se najavljuje čitačima ekrana.
+- Kartice se blago pojavljuju pri skrolovanju; sve animacije su isključene uz `prefers-reduced-motion`.
+- Strelice i ikonice su SVG, jer lokalni fontovi nemaju te znakove (niti ćirilicu).
+- Provereno u Chrome-u, svetla i tamna tema, 1440 i 390 px: bez horizontalnog skrola i bez grešaka u konzoli; kopiranje upisuje tačan tekst; izbor teme ostaje posle osvežavanja; meni se zatvara na Escape; bez JavaScript-a navigacija je vidljiva, a dugmad za kopiranje skrivena.
+
 ## Portfolio verzija
 
 Sajt sadrži predstavljanje pčelinjaka, galeriju pet proizvoda i kontakt. Nema prodavnice, cena, poručivanja, upita uz proizvode, korpe, naloga ili plaćanja. Koristi krem i medenožutu podlogu, smeđe akcente, lokalne fontove Noto Serif i Lato i linijski motiv pčele. README po zahtevu sadrži samo `sajt`.
