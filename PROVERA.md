@@ -2,21 +2,13 @@
 
 ## Redizajn — 17. novembar 2026.
 
-Novi vizuelni identitet: svetla topla podloga (#f6f4ee), tamno mastilo, jedan medeni akcenat, zaobljene kartice sa tankim okvirima. Tekst sveden na nazive, lokaciju i kontakt, bez prodajnih fraza. Sadržaj, nazivi proizvoda, fotografije, kontakt podaci, fontovi i `script.js` ostali su isti.
+Sveden, „štampani" izgled: topla svetla podloga, tamno mastilo i jedan medeni akcenat samo na pčeli. Bez kartica, senki, tagova, numeracije, animacija i ukrasnih pozadina. Tekst je sveden na naziv, jednu rečenicu, nazive proizvoda i kontakt. Sadržaj, fotografije, kontakt podaci, fontovi i `script.js` ostali su isti kao u portfolio verziji.
 
-- Galerija: mreža 3/2/1 kolone, numerisane kartice, šesta kartica vodi na kontakt.
-- Kontakt: tabela Telefon / Email / Lokacija sa linkom ka mapi.
-- Provereno u Chrome-u na 1440 i 390 px: nema horizontalnog skrola ni JavaScript grešaka, mobilni meni radi; `node --check script.js` prolazi.
-
-### Finalna tura
-
-- Uvod: veliki naslov sa medenim kurzivom, dugmad Proizvodi / Kontakt, tri složene fotografije koje se razmaknu na hover i diskretan šestougaoni motiv u pozadini.
-- Tamna tema: automatski prati sistem, a dugme u zaglavlju je ručno menja i pamti (`localStorage`, uz `try/catch`). Tema se postavlja pre crtanja, bez treperenja.
-- Navigacija označava sekciju koja je trenutno na ekranu (`aria-current`).
-- Kontakt: dugmad „Kopiraj" za telefon i mejl, vidljiva samo kada browser podržava kopiranje; status se najavljuje čitačima ekrana.
-- Kartice se blago pojavljuju pri skrolovanju; sve animacije su isključene uz `prefers-reduced-motion`.
-- Strelice i ikonice su SVG, jer lokalni fontovi nemaju te znakove (niti ćirilicu).
-- Provereno u Chrome-u, svetla i tamna tema, 1440 i 390 px: bez horizontalnog skrola i bez grešaka u konzoli; kopiranje upisuje tačan tekst; izbor teme ostaje posle osvežavanja; meni se zatvara na Escape; bez JavaScript-a navigacija je vidljiva, a dugmad za kopiranje skrivena.
+- Uvod: naslov i jedna rečenica.
+- Galerija: fotografije u prirodnoj veličini, mreža 3/2/1 kolone, nazivi ispod u serifu.
+- Kontakt: tri kolone (Telefon, Email, Lokacija) i link ka mapi.
+- Tamna tema se uključuje automatski prema podešavanju sistema.
+- Provereno u Chrome-u na 1440 px (svetla i tamna tema) i 390 px: nema horizontalnog skrola ni grešaka u konzoli; mobilni meni se otvara i zatvara tasterom Escape; `node --check script.js` i `python3 build.py` prolaze.
 
 ## Portfolio verzija
 
