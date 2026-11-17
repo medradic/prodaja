@@ -1,5 +1,13 @@
 # Izveštaj o proveri
 
+## Redizajn — 17. novembar 2026.
+
+Novi vizuelni identitet: svetla topla podloga (#f6f4ee), tamno mastilo, jedan medeni akcenat, zaobljene kartice sa tankim okvirima. Tekst sveden na nazive, lokaciju i kontakt, bez prodajnih fraza. Sadržaj, nazivi proizvoda, fotografije, kontakt podaci, fontovi i `script.js` ostali su isti.
+
+- Galerija: mreža 3/2/1 kolone, numerisane kartice, šesta kartica vodi na kontakt.
+- Kontakt: tabela Telefon / Email / Lokacija sa linkom ka mapi.
+- Provereno u Chrome-u na 1440 i 390 px: nema horizontalnog skrola ni JavaScript grešaka, mobilni meni radi; `node --check script.js` prolazi.
+
 ## Portfolio verzija
 
 Sajt sadrži predstavljanje pčelinjaka, galeriju pet proizvoda i kontakt. Nema prodavnice, cena, poručivanja, upita uz proizvode, korpe, naloga ili plaćanja. Koristi krem i medenožutu podlogu, smeđe akcente, lokalne fontove Noto Serif i Lato i linijski motiv pčele. README po zahtevu sadrži samo `sajt`.

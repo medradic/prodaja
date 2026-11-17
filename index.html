@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4d47a">
+  <meta name="theme-color" content="#f6f4ee">
   <title>Pčelinjak Radić — Med i pčelinji proizvodi</title>
-  <meta name="description" content="Pčelinjak Radić, porodični pčelinjak iz Bele Crkve, Krupanj. Upoznajte naš pčelinjak i pogledajte galeriju meda i pčelinjih proizvoda.">
+  <meta name="description" content="Pčelinjak Radić, Bela Crkva, Krupanj. Galerija meda i pčelinjih proizvoda i kontakt.">
   <meta property="og:title" content="Pčelinjak Radić — Med i pčelinji proizvodi">
-  <meta property="og:description" content="Porodični pčelinjak Radić. Bela Crkva, Krupanj. Med i pčelinji proizvodi.">
+  <meta property="og:description" content="Pčelinjak Radić. Bela Crkva, Krupanj. Med i pčelinji proizvodi.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="sr_RS">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -16,16 +16,17 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><symbol id="bee" viewBox="0 0 80 80"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M33 34C9 4 3 36 29 43M47 34C71 4 77 36 51 43"/><ellipse cx="40" cy="46" rx="12" ry="20"/><path d="M29 39h22M28 48h24M31 57h18M35 27l-6-11m16 11 6-11M29 44l-10 7m32-7 10 7M31 55l-8 9m26-9 8 9M40 66v5"/><circle cx="40" cy="23" r="6"/></g></symbol></defs></svg>
+  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><symbol id="bee" viewBox="0 0 80 80"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M33 34C9 4 3 36 29 43M47 34C71 4 77 36 51 43"/><ellipse cx="40" cy="46" rx="12" ry="20"/><path d="M29 39h22M28 48h24M31 57h18M35 27l-6-11m16 11 6-11M40 66v5"/><circle cx="40" cy="23" r="6"/></g></symbol></defs></svg>
   <a class="skip-link" href="#main">Pređi na sadržaj</a>
+
   <header class="header">
     <div class="header-inner wrap">
       <a class="brand" href="#pocetna" aria-label="Pčelinjak Radić — početna">
-        <svg class="brand-mark" aria-hidden="true"><use href="#bee"/></svg>
-        <span class="brand-name">Radić<span class="brand-caption">PORODIČNI PČELINJAK</span></span>
+        <span class="brand-badge"><svg aria-hidden="true"><use href="#bee"/></svg></span>
+        <span class="brand-name">Pčelinjak Radić</span>
       </a>
       <nav id="navigation" class="navigation" aria-label="Glavna navigacija">
-        <a href="#pocetna">O pčelinjaku</a>
+        <a href="#pocetna">Početna</a>
         <a href="#proizvodi">Proizvodi</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
@@ -34,74 +35,74 @@
   </header>
 
   <main id="main">
-    <section class="hero" id="pocetna" aria-labelledby="hero-title">
-      <div class="hero-inner wrap">
-        <div class="hero-copy">
-          <p class="eyebrow">MED I PČELINJI PROIZVODI</p>
-          <h1 id="hero-title">Pčelinjak<br><em>Radić.</em></h1>
-          <p class="hero-description">Porodični pčelinjak iz Bele Crkve, u opštini Krupanj.</p>
-          <a class="hero-link" href="#proizvodi">Upoznajte naše proizvode <span aria-hidden="true">↓</span></a>
-          <p class="hero-location">Bela Crkva <span aria-hidden="true">·</span> Krupanj</p>
-        </div>
-        <figure class="hero-photo">
-          <div class="hero-photo-frame">
-            <span class="photo-heading">IZ NAŠEG PČELINJAKA</span>
-            <picture>
-              <source srcset="assets/bagrem.webp" type="image/webp">
-              <img src="assets/bagrem.png" width="349" height="220" alt="Dve tegle bagremovog meda Pčelinjaka Radić sa originalnim žutim etiketama" fetchpriority="high">
-            </picture>
-            <svg class="photo-bee" aria-hidden="true"><use href="#bee"/></svg>
-          </div>
-          <figcaption>Bagremov med</figcaption>
-        </figure>
+    <section class="hero wrap" id="pocetna" aria-labelledby="hero-title">
+      <p class="tag"><span class="dot" aria-hidden="true"></span>Bela Crkva · Krupanj</p>
+      <h1 id="hero-title">Pčelinjak Radić</h1>
+      <p class="lead">Med i pčelinji proizvodi.</p>
+      <dl class="facts">
+        <div><dt>Lokacija</dt><dd>Bela Crkva, Krupanj</dd></div>
+        <div><dt>Proizvodi</dt><dd>5</dd></div>
+        <div><dt>Kontakt</dt><dd><a href="tel:+381628872109">062 887 2109</a></dd></div>
+      </dl>
+    </section>
+
+    <section class="section wrap" id="proizvodi" aria-labelledby="products-title">
+      <div class="section-head">
+        <h2 id="products-title">Proizvodi</h2>
+        <span class="count">05</span>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media"><picture><source srcset="assets/bagrem.webp" type="image/webp"><img src="assets/bagrem.png" width="349" height="220" alt="Bagremov med u dve tegle sa žutim etiketama Pčelinjaka Radić" fetchpriority="high" decoding="async"></picture></div>
+          <div class="card-body"><span class="num">01</span><h3>Bagremov med</h3></div>
+        </article>
+        <article class="card">
+          <div class="card-media"><picture><source srcset="assets/livada.webp" type="image/webp"><img src="assets/livada.png" width="350" height="220" alt="Tegla livadskog meda sa originalnom etiketom Pčelinjaka Radić" loading="lazy" decoding="async"></picture></div>
+          <div class="card-body"><span class="num">02</span><h3>Livadski med</h3></div>
+        </article>
+        <article class="card">
+          <div class="card-media"><picture><source srcset="assets/propolis.webp" type="image/webp"><img src="assets/propolis.png" width="350" height="220" alt="Bočica propolisa sa žutim čepom, između dve tegle meda" loading="lazy" decoding="async"></picture></div>
+          <div class="card-body"><span class="num">03</span><h3>Propolis</h3></div>
+        </article>
+        <article class="card">
+          <div class="card-media"><picture><source srcset="assets/teglice.webp" type="image/webp"><img src="assets/teglice.png" width="349" height="220" alt="Med u tri male teglice različitog oblika sa etiketama Pčelinjaka Radić" loading="lazy" decoding="async"></picture></div>
+          <div class="card-body"><span class="num">04</span><h3>Med u teglicama</h3></div>
+        </article>
+        <article class="card">
+          <div class="card-media"><picture><source srcset="assets/poklopcici.webp" type="image/webp"><img src="assets/poklopcici.png" width="349" height="220" alt="Tegla voštanih poklopčića u medu sa originalnom etiketom" loading="lazy" decoding="async"></picture></div>
+          <div class="card-body"><span class="num">05</span><h3>Voštani poklopčići u medu</h3></div>
+        </article>
+        <a class="card card-mark" href="#kontakt">
+          <svg aria-hidden="true"><use href="#bee"/></svg>
+          <span>Kontakt <span aria-hidden="true">→</span></span>
+        </a>
       </div>
     </section>
 
-    <section class="products wrap section" id="proizvodi" aria-labelledby="products-title">
-      <div class="section-heading">
-        <p class="eyebrow">PČELINJAK RADIĆ</p>
-        <h2 id="products-title">Naši proizvodi</h2>
+    <section class="section wrap" id="kontakt" aria-labelledby="contact-title">
+      <div class="section-head">
+        <h2 id="contact-title">Kontakt</h2>
       </div>
-      <div class="product-grid">
-        <article class="product">
-          <div class="product-photo"><picture><source srcset="assets/bagrem.webp" type="image/webp"><img src="assets/bagrem.png" width="349" height="220" alt="Bagremov med u dve tegle sa žutim etiketama Pčelinjaka Radić" loading="lazy" decoding="async"></picture></div>
-          <div class="product-info"><h3>Bagremov med</h3></div>
-        </article>
-        <article class="product">
-          <div class="product-photo"><picture><source srcset="assets/livada.webp" type="image/webp"><img src="assets/livada.png" width="350" height="220" alt="Tegla livadskog meda sa originalnom etiketom Pčelinjaka Radić" loading="lazy" decoding="async"></picture></div>
-          <div class="product-info"><h3>Livadski med</h3></div>
-        </article>
-        <article class="product">
-          <div class="product-photo"><picture><source srcset="assets/propolis.webp" type="image/webp"><img src="assets/propolis.png" width="350" height="220" alt="Bočica propolisa sa žutim čepom, između dve tegle meda" loading="lazy" decoding="async"></picture></div>
-          <div class="product-info"><h3>Propolis</h3></div>
-        </article>
-        <article class="product">
-          <div class="product-photo"><picture><source srcset="assets/teglice.webp" type="image/webp"><img src="assets/teglice.png" width="349" height="220" alt="Med u tri male teglice različitog oblika sa etiketama Pčelinjaka Radić" loading="lazy" decoding="async"></picture></div>
-          <div class="product-info"><h3>Med u teglicama</h3></div>
-        </article>
-        <article class="product">
-          <div class="product-photo"><picture><source srcset="assets/poklopcici.webp" type="image/webp"><img src="assets/poklopcici.png" width="349" height="220" alt="Tegla voštanih poklopčića u medu sa originalnom etiketom" loading="lazy" decoding="async"></picture></div>
-          <div class="product-info"><h3>Voštani poklopčići u medu</h3></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="contact" id="kontakt" aria-labelledby="contact-title">
-      <div class="wrap">
-        <div class="contact-heading"><h2 id="contact-title">Kontakt</h2><svg class="contact-bee" aria-hidden="true"><use href="#bee"/></svg></div>
-        <div class="contact-grid">
-          <div><p class="eyebrow">TELEFON</p><a class="contact-phone" href="tel:+381628872109">062 887 2109 <span aria-hidden="true">↗</span></a></div>
-          <div><p class="eyebrow">EMAIL</p><a class="contact-email" href="mailto:radiccslobodan@gmail.com">radiccslobodan@gmail.com <span aria-hidden="true">↗</span></a></div>
-          <div><p class="eyebrow">LOKACIJA</p><p class="location-name">Bela Crkva, Krupanj</p><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=P%C4%8Delinjak%20Radi%C4%87%2C%20Bela%20Crkva%2C%20Krupanj" target="_blank" rel="noopener noreferrer">Pogledajte na mapi <span class="sr-only">(novi prozor)</span><span aria-hidden="true">↗</span></a></div>
+      <dl class="contact">
+        <div class="row">
+          <dt>Telefon</dt>
+          <dd><a href="tel:+381628872109">062 887 2109</a></dd>
         </div>
-      </div>
+        <div class="row">
+          <dt>Email</dt>
+          <dd><a href="mailto:radiccslobodan@gmail.com">radiccslobodan@gmail.com</a></dd>
+        </div>
+        <div class="row">
+          <dt>Lokacija</dt>
+          <dd>Bela Crkva, Krupanj <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=P%C4%8Delinjak%20Radi%C4%87%2C%20Bela%20Crkva%2C%20Krupanj" target="_blank" rel="noopener noreferrer">Mapa<span class="sr-only"> (novi prozor)</span> <span aria-hidden="true">↗</span></a></dd>
+        </div>
+      </dl>
     </section>
   </main>
 
   <footer class="footer wrap">
-    <a class="footer-brand" href="#pocetna">Pčelinjak Radić</a>
-    <p>© <span id="year">2026</span> Pčelinjak Radić.</p>
-    <a class="back-top" href="#pocetna">Nazad na vrh <span aria-hidden="true">↑</span></a>
+    <p>© <span id="year">2026</span> Pčelinjak Radić</p>
+    <a class="back-top" href="#pocetna">Na vrh <span aria-hidden="true">↑</span></a>
   </footer>
 </body>
 </html>
